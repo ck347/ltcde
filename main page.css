@@ -285,22 +285,36 @@ a:hover {
 }
 
 .portfolio {
-    width: 60%;
-    margin: 0px 20%;
-}
-
-.row1 {
+    width: 60vw;
+    margin: 0px 20vw;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+ .portfolio {
+    margin: 0;
+    width: 100vw;
+ }   
 }
 
-.row1 div {
+.prof {
     width: 230px;
     line-height: 30%;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    margin: 0 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    .prof {
+        margin: 0;
+    }
+    .portfolio img {
+        object-fit: cover;
+        width: 20vw;
+    }
 }
 
 .portfolio img {
