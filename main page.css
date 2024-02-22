@@ -121,7 +121,8 @@ a:hover {
 
 #titleann, #contact {
     display: flex;
-    padding: 5% 0px;
+    padding-top: 5%;
+    padding-bottom: 1%;
     align-items: center;
 }
 
@@ -161,31 +162,37 @@ a:hover {
     }
 }
 
+.anns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .ann1,
 .ann2,
-.ann3 {
+.ann3,
+.ann4 {
     padding-top: 2vh;
     border-radius: 10px;
     border: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
-    margin: auto;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
+    width: 35%;
+    margin: 1% 1%;
 }
 
 @media screen and (max-width: 768px) {
 
     .ann1,
     .ann2,
-    .ann3 {
+    .ann3,
+    .ann4 {
         min-height: 30vh;
     }
 }
 
 @media screen and (max-width: 431px) {
-    .ann1, .ann2, .ann3 {
+    .ann1, .ann2, .ann3, .ann4 {
         padding-top: 4%;
     }
 }
@@ -193,6 +200,7 @@ a:hover {
 .ann1 .left,
 .ann2 .right,
 .ann3 .left,
+.ann4 .right,
 #council .left {
     flex: 1;
     padding-left: 6%;
@@ -204,6 +212,8 @@ a:hover {
 .ann2 p,
 .ann3 b,
 .ann3 p,
+.ann4 b,
+.ann4 p,
 #council p,
 .cctt p {
     font-size: 28px;
@@ -219,6 +229,8 @@ a:hover {
     .ann2 p,
     .ann3 b,
     .ann3 p,
+    .ann4 b,
+    .ann4 p,
     #council p,
     .cctt p {
         font-size: 20px;
@@ -317,6 +329,13 @@ a:hover {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .cctt p {
+        margin: 0 2vw;
+        padding-bottom: 2vh;
+    }
+}
+
 .portfolio {
     width: 60vw;
     margin: 0px 20vw;
@@ -331,18 +350,31 @@ a:hover {
  }   
 }
 
+.names p {
+    line-height: 100%;
+    margin: 15px 0;
+}
+
 .prof {
     width: 230px;
     line-height: 30%;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 0 1vw;
 }
 
+.title {
+    font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
     .prof {
         margin: 0;
+        font-size: 0.8em;
+    }
+    .title {
+        font-size: 0.9em;
     }
     .portfolio img {
         object-fit: cover;
@@ -362,7 +394,13 @@ a:hover {
 }
 
 .portfolio img {
-    padding-bottom: 9px;
+    padding-bottom: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio img {
+        padding-bottom: 2%;
+    }
 }
 
 #contact {
