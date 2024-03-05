@@ -204,6 +204,7 @@ a:hover {
 #council .left {
     flex: 1;
     padding-left: 6%;
+    padding-right: 5%;
 }
 
 .ann1 b,
